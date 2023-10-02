@@ -1,13 +1,25 @@
 # Philipe Couto challenge
 
 ## My anwsers about questions
-### 1 - The average complexity, I say average because each method has a complexity, which can vary to treat each file. So the average complexity is o(n) which is a good complexity for handling files. Talking about swaps, I chose loops for reading the files which generates a linear complexity, but can increase the execution time as the files get bigger.
+### 1 - The average complexity, I say average because each method has a complexity, which can vary to treat each file. So the average complexity is o(n) which is a good complexity for handling files. Talking about swaps, I chose loops (avoiding nested loops) for reading the files and create the anwsers files, which generates a linear complexity, but can increase the execution time as the files get bigger.
 
-### 2 - First i will create a new functon to look all file header and get the columns name and then modify the data processing functions: Update the data processing functions (count_legislator_votes, count_bill_legislators, etc.) to extract the values for the new columns from the CSV files. Modify the CSVHandler class and put the columns in to array with all columns names. And at last i will chage the CSV Generator to handle with new fields.
+### 2 - First i will create a function to look all file header and get the columns name (or maybe create a new class to handle with this) and then modify the data processing functions: Update the data processing functions (count_legislator_votes, count_bill_legislators, etc.) to extract the values for the new columns from the CSV files. Modify the CSVHandler class and put the columns in to array with all columns names. And at last i will chage the CSV Generator to handle with new fields.
 
 ### 3 - It would make small adjustments to the HandleCSV class for whatever new data type it might be, like lists or stacks. This class handles the data it receives. Perhaps I would also choose a more generic name.
 
-### 4 - To complete this task I spent about 3 hours and 40 minutes.
+### 4 - To complete this task I spent about 3 hours and 25 minutes.
+
+## Git Hub of final version 
+  https://github.com/lipecouto/Quorum-code-Challenge
+
+You can see all branchs in this repository and all commits
+
+## Git Hub execution
+
+git clone `git@github.com:lipecouto/Quorum-code-Challenge.git`
+
+
+and then
 
 ## Code Execution steps:
 

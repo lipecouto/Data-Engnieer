@@ -12,6 +12,7 @@ class legislators:
         for vote_result in vote_results:
             legislator_id = vote_result['legislator_id']
             vote_type = vote_result['vote_type']
+            #check if this vote support or opposed
             if legislator_id in legislator_votes:
                 if vote_type == '1':
                     legislator_votes[legislator_id]['num_opposed_bills'] += 1
@@ -25,6 +26,9 @@ class legislators:
         return legislator_votes
 
     def get_legislator_name(legislators, legislator_id):
+        '''
+            Function to get legislators Name for CSV file output
+        '''
         for legislator in legislators:
             if legislator['id'] == legislator_id:
                 return legislator['name']
